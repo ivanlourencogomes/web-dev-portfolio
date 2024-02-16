@@ -1,0 +1,19 @@
+
+:root {
+    --dark-grey: #090909;
+    --dark-blue: #28293E;
+    --blue: #2A496E;
+    --light-blue: #2980FF;
+    --white: #fff;
+    --black: #000;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'OpenSans', sans-serif;
+}
+
+section {
+    padding: 24px 0;
+}
