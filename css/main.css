@@ -23,6 +23,12 @@ ul {
     margin: 0;
 }
 
+ul.menu li {
+    margin: 28px auto;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 section {
     padding: 24px 0;
     text-align: center;
@@ -49,6 +55,7 @@ div.container {
     margin: auto;
     height: 100%;
 }
+
 
 header .container {
     display: flex;
@@ -125,14 +132,14 @@ section.hero-content h2 {
     margin-bottom: 24px;
 }
 
-section.hero-content .social-icons {
+.social-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 18px;
 }
 
-section.hero-content .social-icon {
+.social-icons .social-icon {
     width: 38px;
     height: 38px;
     background-color: var(--blue);
@@ -140,11 +147,11 @@ section.hero-content .social-icon {
     border-radius: 20px;
 }
 
-section.hero-content .social-icon a {
+.social-icons .social-icon a {
     text-decoration: none;
 }
 
-section.hero-content .social-icon img {
+.social-icons .social-icon img {
     max-width: 90%;
     height: auto;
 }
@@ -231,7 +238,7 @@ ul.project-list li {
 }
 
 ul.project-list li {
-    height: 412px;
+    height: 428px;
     margin: 12px auto;
     width: 100%;
     position: relative;
@@ -277,4 +284,49 @@ ul.project-list p {
     margin-top: 6px;
     font-size: 14px;
     letter-spacing: 3px;
+}
+
+section.contact {
+    background-color: var(--dark-blue);
+    color: var(--white);   
+    padding: 50px; 
+}
+
+section.contact h2 {
+    font-size: 24px;
+}
+
+section.contact p {
+    color: var(--light-grey);    
+}
+
+section.contact button {
+    background-color: var(--light-blue);
+    color: var(--white);   
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 160px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+}
+
+footer hr {
+    width: 130px;
+    margin-top: 32px;
+    background-color: var(--light-grey);
+    height: 1px;
+    border: none;
+}
+
+footer .copyright {
+    color: var(--grey);
+    font-size: 16px;
+    font-weight: 300;
 }
