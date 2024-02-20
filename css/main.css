@@ -92,6 +92,36 @@ div.container {
     height: auto;
 }
 
+.contact-details ul {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s;
+}
+
+.contact-details ul.show {
+    height: 100%;
+    opacity: 1;
+}
+
+.contact-details ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-details ul li img {
+    filter: invert(1);
+    width: 30px;
+    height: auto;
+}
+
+.contact-details ul li a {
+    text-decoration: none;
+    color: var(--light-blue);
+    padding-left: 12px;
+}
+
 
 
 /* *********************************
@@ -357,6 +387,7 @@ button.contact {
     height: 40px;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 footer {
