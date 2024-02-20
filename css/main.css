@@ -383,9 +383,11 @@ Styles for TABLET
         flex-direction: row-reverse;
     }
 
-    section.hero > div {
+    section.hero .container > div {
         flex: 50%;
     }
+
+
 
     .hero-content {
         text-align: left;
@@ -397,6 +399,10 @@ Styles for TABLET
 
     .hero-content h2 {
         font-size: 16px;
+    }
+
+    .hero-content p {
+        margin: 0;
     }
 
     .hero-image {
@@ -448,3 +454,65 @@ Styles for TABLET
     }
 
  }
+
+
+ /* *********************************
+Styles for DESKTOP
+********************************* */ 
+@media (min-width: 992px) { 
+
+    div.container {
+        max-width: 960px;
+    }
+
+    header ul {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 54px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        max-width: 90%;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    section p.description {
+        font-size: 18px;
+    }
+
+    section.experience ul li {
+        max-width: 32%;
+    }
+
+    section.experience ul li h3 {
+        font-size: 24px;
+    }
+
+    section.experience ul li p {
+        font-size: 18px;
+    }
+
+    ul.project-list li {
+        max-width: 32%;
+        margin: 12px auto;
+    }
+
+    section.contact {
+        box-sizing: border-box;
+        max-width: 960px;
+        margin: auto;
+    }
+
+
+}
