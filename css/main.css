@@ -216,6 +216,7 @@ section.skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    cursor: default;
 }
 
 .skills .skill {
@@ -511,13 +512,44 @@ Styles for DESKTOP
         max-width: 960px;
     }
 
+    .social-icons .social-icon {
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .social-icons .social-icon:hover {
+       background-color: var(--light-blue);
+    }
+
+
     header ul.menu {
         justify-content: flex-end;
         width: 100%;
     }
 
     header ul.menu li {
-        margin: 0px 16px
+        margin: 0px 16px;
+        cursor: pointer;
+    }
+
+    ul.menu li {
+        cursor: pointer;
+        transition: color 0.3s;
+        transition: background-color 0.3s;
+    }
+
+    ul.menu li:hover {
+        color: var(--light-blue);
+    }
+
+    button.contact {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button.contact:hover {
+        background-color: var(--white);
+        color: var(--light-blue);
     }
 
     .hero-content h1 {
@@ -543,6 +575,7 @@ Styles for DESKTOP
 
     section.experience ul li {
         max-width: 32%;
+        cursor: default;
     }
 
     section.experience ul li h3 {
@@ -556,6 +589,12 @@ Styles for DESKTOP
     ul.project-list li {
         max-width: 32%;
         margin: 12px auto;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    ul.project-list li:hover {
+        transform: translateY(-6px);
     }
 
     section.contact {
