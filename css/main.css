@@ -41,6 +41,11 @@ ul.menu li {
     font-weight: 600;
 }
 
+ul.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
 section p.description {
     font-size: 16px;
     line-height: 32px;

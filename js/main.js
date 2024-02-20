@@ -14,6 +14,16 @@ window.addEventListener("load", (event) => {
         menu.classList.remove("open");
     });
 
+    document.querySelectorAll('.menu a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
 });
 
 
